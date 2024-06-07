@@ -88,6 +88,66 @@ export default function Header({ active }) {
             </Link>
           </button>
         </div>
+        {/* ===================== */}
+        <div id="header-subcont-child-m">
+          <div className="top-nav-m">
+            <button className="header-nav-list">
+              <Image src={Wallet} />
+              <Link
+                href="/wt"
+                className={
+                  active === "wt"
+                    ? "header-nl-title header-nl-title-active"
+                    : "header-nl-title"
+                }
+              >
+                Wallet Tracker
+              </Link>
+            </button>
+            <button className="header-nav-list">
+              <Image src={Dollar} />{" "}
+              <Link
+                href="/financing"
+                className={
+                  active === "financing"
+                    ? "header-nl-title header-nl-title-active"
+                    : "header-nl-title"
+                }
+              >
+                Financing
+              </Link>
+            </button>
+          </div>
+          <div className="top-nav-m">
+            <button className="header-nav-list">
+              <Image src={Transaction} />
+              <Link
+                href="/transactions"
+                className={
+                  active === "transactions"
+                    ? "header-nl-title header-nl-title-active"
+                    : "header-nl-title"
+                }
+              >
+                Transactions
+              </Link>
+            </button>
+            <button className="header-nav-list">
+              <Image src={Setting} />{" "}
+              <Link
+                href="/config"
+                className={
+                  active === "config"
+                    ? "header-nl-title header-nl-title-active"
+                    : "header-nl-title"
+                }
+              >
+                Configurations
+              </Link>
+            </button>
+          </div>
+        </div>
+
 
         <Link
           href={"/help"}
@@ -102,6 +162,7 @@ export default function Header({ active }) {
             color: "white",
             whiteSpace: "nowrap",
           }}
+          className="help-center"
         >
           <HelpCircle width={20} height={20} /> Help Center
         </Link>

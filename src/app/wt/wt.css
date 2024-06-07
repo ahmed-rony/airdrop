@@ -112,7 +112,7 @@
       gap: 1em;
       padding: 10px;
       border-radius: 8px;
-      border: 1px solid pink;
+      border: 1px solid rgba(255, 255, 255, 0.25);
       /* overflow-x: auto; */
       flex-wrap: wrap;
       width: 100%;
@@ -120,7 +120,7 @@
 .wt-card1-head2-child3-btn {
      padding: 3px 10px;
      color: white;
-     border: 1px solid pink;
+     border: 1px solid rgba(76, 175, 79, 0.6);
      border-radius: 8px;
      background-color: #1D2B51;
      font-weight: 600;
@@ -140,7 +140,7 @@
       gap: 1em;
       padding: 10px;
       border-radius: 8px;
-      border: 1px solid pink;
+      border: 1px solid rgba(255, 255, 255, 0.25);
       width: 100%;
 }
 #wt-card1-main-graph {
