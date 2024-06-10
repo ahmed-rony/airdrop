@@ -8,6 +8,7 @@ import Setting from "../../assets/Settings Icon.svg";
 import Dollar from "../../assets/Vector.svg";
 import Download from "../../assets/Vector (10).svg";
 import Wallet from "../../assets/Vector (5) (1).svg";
+import Link from "next/link";
 
 export default function Config() {
   const username = "meruzu_nft";
@@ -37,37 +38,37 @@ export default function Config() {
       icon: () => <Image src={Setting} />,
       name: "General",
       description: "View and edit your AirdropFarming settings.",
-      to: "/config",
+      to: "/General",
     },
     {
       icon: () => <Calendar width={20} height={20} />,
       name: "Subscriptions",
       description: "View and edit your subscriptions.",
-      to: "/config",
+      to: "/Subscriptions",
     },
     {
       icon: () => <Bell width={20} height={20} />,
       name: "Notifications",
       description: "Manage notifications sent to you.",
-      to: "/config",
+      to: "/Notifications",
     },
     {
       icon: () => <Image src={Wallet} />,
       name: "Wallets",
       description: "View and edit your wallet settings.",
-      to: "/config",
+      to: "/Wallets",
     },
     {
       icon: () => <Image src={Dollar} />,
       name: "Billing",
       description: "Manage your billing information.",
-      to: "/config",
+      to: "/Billing",
     },
     {
       icon: () => <Image src={Download} />,
       name: "Download History",
       description: "Download your transaction history.",
-      to: "/config",
+      to: "/History",
     },
   ];
   //  static contents
@@ -180,7 +181,7 @@ export default function Config() {
             </div>
             <div className="config-section2-card-body">
               {settings.map((elem, index) => (
-                <div key={index} className="config-section2-card-list">
+                <Link href={elem?.to} key={index} className="config-section2-card-list">
                   <div className="config-section2-card-list-icon">
                     {elem.icon()}
                   </div>
@@ -188,7 +189,7 @@ export default function Config() {
                     <div style={{ fontWeight: 700,paddingBottom:"5px" }}>{elem.name}</div>
                     <div>{elem.description}</div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

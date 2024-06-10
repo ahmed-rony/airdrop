@@ -82,6 +82,7 @@
   gap: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
+  cursor: pointer;
 }
 .config-section2-card-list-icon {
  background-color: #121420;

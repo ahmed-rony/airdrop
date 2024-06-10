@@ -114,7 +114,7 @@ const WtCard1Main = ({ proto, amFirst, gvalues }) => {
             <button
               className="wt-card1-head2-child3-btn wt-c1-mc"
               style={{
-                border: proto === "Scroll" ? "1px solid green" : "none",
+                border: proto === "Scroll" ? "1px solid green" : "none", cursor:"pointer"
               }}
             >
               Active
@@ -122,12 +122,12 @@ const WtCard1Main = ({ proto, amFirst, gvalues }) => {
             <button
               className="wt-card1-head2-child3-btn wt-c1-mc"
               style={{
-                border: proto !== "Scroll" ? "1px solid green" : "none",
+                border: proto !== "Scroll" ? "1px solid green" : "none", cursor:"pointer"
               }}
             >
               Pause
             </button>
-            <button className="wt-card1-head2-child3-btn wt-c1-mc">
+            <button className="wt-card1-head2-child3-btn wt-c1-mc" style={{cursor:"pointer"}}>
               Abort
             </button>
           </div>
