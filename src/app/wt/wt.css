@@ -69,6 +69,9 @@
       align-items: center;
       flex-wrap: wrap;
 }
+#wtc1{
+      margin-top: -50px;
+}
 #wt-card1-head1 {
       background-color: #121420;
       color: white;
