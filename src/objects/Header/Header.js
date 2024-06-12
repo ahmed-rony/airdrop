@@ -74,7 +74,7 @@ export default function Header({ active }) {
               Transactions
             </Link>
           </button>
-          <button className="header-nav-list">
+          <button className="header-nav-list config001">
             <Image src={Setting} />{" "}
             <Link
               href="/config"
